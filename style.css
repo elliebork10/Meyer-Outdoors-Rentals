@@ -37,9 +37,11 @@ header {
 }
 
 .site-logo {
-  max-height: 360px;
+  max-height: 360px; /* Increased from 90px to make the logo significantly larger */
   width: auto;
   object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
 
 header h1 {
