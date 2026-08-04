@@ -37,7 +37,7 @@ header {
 }
 
 .site-logo {
-  max-height: 180px;
+  max-height: 360px;
   width: auto;
   object-fit: contain;
 }
