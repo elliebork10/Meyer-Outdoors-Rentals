@@ -1,0 +1,247 @@
+:root {
+  --bg-main: #f4f1ea;       /* Cozy Cream */
+  --bg-card: #eae6df;       /* Light Muted Gray/Tan */
+  --primary: #2c3e35;       /* Deep Forest Green */
+  --accent: #a86540;        /* Rust / Amber */
+  --text-dark: #2d312e;     /* Charcoal Dark Text */
+  --border-color: #dcd7ce;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: #f4f1ea;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.camper-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.camper-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.camper-card h3 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.badge {
+  background-color: var(--primary);
+  color: white;
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--accent);
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-top: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.info-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.info-box {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.info-box h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 0.3rem;
+}
+
+.info-box ul {
+  list-style-type: square;
+  padding-left: 1.2rem;
+}
+
+.info-box li {
+  margin-bottom: 0.5rem;
+}
+
+/* Individual Camper Details Page */
+.detail-header {
+  margin-bottom: 2rem;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media(min-width: 768px) {
+  .detail-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--primary);
+  color: white;
+  margin-top: 3rem;
+}
+/* Contact Us Footer Section */
+.contact-section {
+  background-color: var(--card-bg);
+  border-top: 2px solid var(--border-color);
+  padding: 2.5rem 1rem;
+  margin-top: 3rem;
+}
+
+.contact-container {
+  max-width: 1050px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-container h2 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.owners-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1.5rem 0;
+}
+
+.owner-card {
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+  min-width: 260px;
+}
+
+.owner-card h3 {
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+}
+
+.owner-card a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.owner-card a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.address-info {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}

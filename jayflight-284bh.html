@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2019 Jayflight 284BH - Meyer Outdoors & Rentals</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Meyer Outdoors & Rentals</h1>
+    <nav><a href="index.html">← Back to All Campers</a></nav>
+  </header>
+
+  <div class="container">
+    <div class="detail-header">
+      <h2>2019 Jayflight 284BH</h2>
+      <p><strong>Capacity:</strong> Sleeps 8-10 | <strong>Rate:</strong> $145/night (3-night minimum | 10% off 7+ nights)</p>
+    </div>
+
+    <div class="detail-grid">
+      <div class="info-box">
+        <h3>Availability Calendar</h3>
+        <p><small>Check available dates below before submitting your request.</small></p><br>
+        <iframe src="https://calendar.google.com/calendar/embed?src=en.usa%23holiday%40group.v.calendar.google.com&ctz=America%2FNew_York" style="border:0; width:100%; height:350px;" frameborder="0" scrolling="no"></iframe>
+      </div>
+
+      <div class="info-box">
+        <h3>Request to Book</h3>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY_HERE">
+          <input type="hidden" name="camper_model" value="2019 Jayflight 284BH">
+
+          <div class="form-group">
+            <label>Name:</label>
+            <input type="text" name="name" required>
+          </div>
+          <div class="form-group">
+            <label>Email:</label>
+            <input type="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label>Phone:</label>
+            <input type="tel" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label>Pickup / Start Date:</label>
+            <input type="date" name="start_date" required>
+          </div>
+          <div class="form-group">
+            <label>Return / End Date:</label>
+            <input type="date" name="end_date" required>
+          </div>
+          <div class="form-group">
+            <label>Delivery Option:</label>
+            <select name="delivery_type">
+              <option value="Self Pickup">Self Pickup ($25 Equalizer Hitch fee applies)</option>
+              <option value="Delivery">Delivery ($4/mi, $100 min + $75 sewage fee)</option>
+              <option value="Winstock">Winstock Special Flat Rate ($300)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Add-ons requested:</label>
+            <textarea name="addons" placeholder="E.g. Generator, E-bikes, Brake controller"></textarea>
+          </div>
+          <button type="submit" class="btn">Send Rental Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer><p>&copy; Meyer Outdoors & Rentals</p></footer>
+</body>
+</html>
