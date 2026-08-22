@@ -20,58 +20,33 @@
     </div>
 
     <section class="gallery-section">
-  <h3>Camper Photos</h3>
-  <div class="gallery-grid">
-    <img src="images250/250exterior.jpeg" alt="2026 Jayflight 250BH Exterior" class="gallery-img" onclick="openLightbox(this.src)">
-    <img src="images250/250layout.jpeg" alt="2026 Jayflight 250BH Layout" class="gallery-img" onclick="openLightbox(this.src)">
-    <img src="images250/250specs.jpeg" alt="2026 Jayflight 250BH Specs" class="gallery-img" onclick="openLightbox(this.src)">
-    <img src="images250/250main.jpeg" alt="2026 Jayflight 250BH Main Space" class="gallery-img" onclick="openLightbox(this.src)">
-    <img src="images250/250main2.jpeg" alt="2026 Jayflight 250BH Main Space" class="gallery-img" onclick="openLightbox(this.src)">
-    <img src="images250/250master.jpeg" alt="2026 Jayflight 250BH Masterbed" class="gallery-img" onclick="openLightbox(this.src)">
-    <img src="images250/250bunk.jpeg" alt="2026 Jayflight 250BH Bunks" class="gallery-img" onclick="openLightbox(this.src)">
-    <img src="images250/250bath.jpeg" alt="2026 Jayflight 250BH Bathroom" class="gallery-img" onclick="openLightbox(this.src)">
-  </div>
-</section>
+      <h3>Camper Photos</h3>
+      <div class="gallery-grid">
+        <img src="images250/250exterior.jpeg" alt="2026 Jayflight 250BH Exterior" class="gallery-img" onclick="openLightbox(this.src)">
+        <img src="images250/250layout.jpeg" alt="2026 Jayflight 250BH Layout" class="gallery-img" onclick="openLightbox(this.src)">
+        <img src="images250/250specs.jpeg" alt="2026 Jayflight 250BH Specs" class="gallery-img" onclick="openLightbox(this.src)">
+        <img src="images250/250main.jpeg" alt="2026 Jayflight 250BH Main Space" class="gallery-img" onclick="openLightbox(this.src)">
+        <img src="images250/250main2.jpeg" alt="2026 Jayflight 250BH Main Space" class="gallery-img" onclick="openLightbox(this.src)">
+        <img src="images250/250master.jpeg" alt="2026 Jayflight 250BH Masterbed" class="gallery-img" onclick="openLightbox(this.src)">
+        <img src="images250/250bunk.jpeg" alt="2026 Jayflight 250BH Bunks" class="gallery-img" onclick="openLightbox(this.src)">
+        <img src="images250/250bath.jpeg" alt="2026 Jayflight 250BH Bathroom" class="gallery-img" onclick="openLightbox(this.src)">
+      </div>
+    </section>
 
-<div id="imageModal" class="modal" onclick="closeLightbox()">
-  <span class="close-modal">&times;</span>
-  <img class="modal-content" id="modalImg">
-</div>
+    <div id="imageModal" class="modal" onclick="closeLightbox()">
+      <span class="close-modal">&times;</span>
+      <img class="modal-content" id="modalImg">
+    </div>
 
-<script src="script.js"></script>
-
+    <!-- Main Grid: Calendar on Left, Booking Form on Right -->
     <div class="detail-grid">
       <div class="info-box">
         <h3>Availability Calendar</h3>
         <p><small>Check available dates below before submitting your request.</small></p><br>
         <p><small>Even if dates are unavailable, please still contact us because we may have other options not listed!</small></p><br>
-<iframe src="https://calendar.google.com/calendar/embed?src=e22686a44c053902af6305d12f964712fe6dabea066168a5df29a18ef8f16ea4%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>      </div>
+        <iframe src="https://calendar.google.com/calendar/embed?src=e22686a44c053902af6305d12f964712fe6dabea066168a5df29a18ef8f16ea4%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="100%" height="500" frameborder="0" scrolling="no"></iframe>
+      </div>
 
-      <!-- Included Amenities & House Rules Section -->
-<section class="camper-details-extra">
-  <div class="amenities-container">
-    <h3>What’s Included with Your Rental</h3>
-    <ul class="amenities-list">
-      <li>🛏️ Bedding, pillows, & blankets</li>
-      <li>🧼 Towels for 4 people</li>
-      <li>🍳 Cookware & utensils</li>
-      <li>🧹 Cleaning supplies</li>
-      <li>⚙️ Exterior set-up equipment</li>
-      <li>🪑 2 Bag chairs</li>
-      <li>🧻 RV toilet paper & tank chemicals</li>
-    </ul>
-  </div>
-
-  <div class="rules-container">
-    <h3>Rental Rules</h3>
-    <ul class="rules-list">
-      <li><strong>Age Limit:</strong> Renters must be 25 years or older.</li>
-      <li><strong>🚭 NO SMOKING:</strong> Absolutely NO smoking in trailers! Damage deposit will be automatically revoked.</li>
-      <li><strong>🐾 Pet Policy:</strong> Pet friendly! (Renters must clean all evidence of pets prior to return).</li>
-    </ul>
-  </div>
-</section>
-      
       <div class="info-box">
         <h3>Request to Book</h3>
         <form action="https://api.web3forms.com/submit" method="POST">
@@ -95,11 +70,49 @@
           <button type="submit" class="btn">Send Rental Inquiry</button>
         </form>
       </div>
-    </div>
-  </div>
+    </div> <!-- End of .detail-grid -->
+
+    <!-- Amenities & Rules Placed FULL WIDTH Below the Grid -->
+    <section class="camper-details-extra">
+      <div class="amenities-container">
+        <h3>What’s Included with Your Rental</h3>
+        <ul class="amenities-list">
+          <li>🛏️ Bedding, pillows, & blankets</li>
+          <li>🧼 Towels for 4 people</li>
+          <li>🍳 Cookware & utensils</li>
+          <li>🧹 Cleaning supplies</li>
+          <li>⚙️ Exterior set-up equipment</li>
+          <li>🪑 2 Bag chairs</li>
+          <li>🧻 RV toilet paper & tank chemicals</li>
+        </ul>
+      </div>
+
+      <div class="rules-container">
+        <h3>Rental Rules</h3>
+        <ul class="rules-list">
+          <li><strong>Age Limit:</strong> Renters must be 25 years or older.</li>
+          <li><strong>🚭 NO SMOKING:</strong> Absolutely NO smoking in trailers! Damage deposit will be automatically revoked.</li>
+          <li><strong>🐾 Pet Policy:</strong> Pet friendly! (Renters must clean all evidence of pets prior to return).</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Cancellation Policy Card -->
+    <section class="cancellation-policy">
+      <div class="policy-card">
+        <h3>🗓️ Cancellation Policy</h3>
+        <ul class="rules-list">
+          <li><strong>14+ Days Notice:</strong> Full refund of booking total.</li>
+          <li><strong>7–13 Days Notice:</strong> 50% refund of booking total.</li>
+          <li><strong>Under 7 Days Notice:</strong> Non-refundable.</li>
+        </ul>
+      </div>
+    </section>
+
+  </div> <!-- End of .container -->
 
   <footer><p>&copy; Meyer Outdoors & Rentals</p></footer>
-  
+
   <script src="script.js"></script>
 </body>
 </html>
