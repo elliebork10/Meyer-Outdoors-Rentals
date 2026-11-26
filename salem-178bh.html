@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2022 Salem 178BHSKX - Meyer Outdoors & Rentals</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Meyer Outdoors & Rentals</h1>
+    <nav><a href="index.html">← Back to All Campers</a></nav>
+  </header>
+
+  <div class="container">
+    <div class="detail-header">
+      <h2>2022 Salem 178BHSKX</h2>
+      <p><strong>Capacity:</strong> Sleeps 5–8 | <strong>Rate:</strong> $145/night (3-night minimum | 10% off 7+ nights)</p>
+    </div>
+
+    <section class="gallery-section">
+      <h3>Camper Photos</h3>
+      <div class="gallery-grid">
+        <img src="images178/178ex1.jpeg" alt="2022 Salem 178BHSKX Exterior" class="gallery-img" onclick="openLightbox(this.src)">
+        <img src="images178/178ex2.jpeg" alt="2022 Salem 178BHSKX Exterior" class="gallery-img" onclick="openLightbox(this.src)">
+        <img src="images178/178ex3.jpeg" alt="2022 Salem 178BHSKX Exterior" class="gallery-img" onclick="openLightbox(this.src)">
+        <img src="images178/178grill.jpeg" alt="2022 Salem 178BHSKX Outdoor Grill" class="gallery-img" onclick="openLightbox(this.src)">
+        <img src="images178/178speslayout.jpeg" alt="2022 Salem 178BHSKX Specs & Layout" class="gallery-img" onclick="openLightbox(this.src)">
+        <img src="images178/178main.jpeg" alt="2022 Salem 178BHSKX Main Space" class="gallery-img" onclick="openLightbox(this.src)">
+        <img src="images178/178kitchen.jpeg" alt="2022 Salem 178BHSKX Kitchen" class="gallery-img" onclick="openLightbox(this.src)">
+        <img src="images178/178table.jpeg" alt="2022 Salem 178BHSKX Table" class="gallery-img" onclick="openLightbox(this.src)">
+        <img src="images178/178bed.jpeg" alt="2022 Salem 178BHSKX Masterbed" class="gallery-img" onclick="openLightbox(this.src)">
+        <img src="images178/178 bunk.jpeg" alt="2022 Salem 178BHSKX Bunks" class="gallery-img" onclick="openLightbox(this.src)">
+        <img src="images178/178bath1.jpeg" alt="2022 Salem 178BHSKX Bathroom" class="gallery-img" onclick="openLightbox(this.src)">
+        <img src="images178/178bath2.jpeg" alt="2022 Salem 178BHSKX Bathroom" class="gallery-img" onclick="openLightbox(this.src)">
+      </div>
+    </section>
+
+    <div id="imageModal" class="modal" onclick="closeLightbox()">
+      <span class="close-modal">&times;</span>
+      <img class="modal-content" id="modalImg">
+    </div>
+
+    <!-- Main Grid: Calendar on Left, Booking Form on Right -->
+    <div class="detail-grid">
+      <div class="info-box">
+        <h3>Availability Calendar</h3>
+        <p><small>Check available dates below before submitting your request.</small></p><br>
+        <p><small>Even if dates are unavailable, please still contact us because we may have other options not listed!</small></p><br>
+        <!-- REPLACE SRC BELOW WITH YOUR GOOGLE CALENDAR EMBED URL FOR THE 2022 SALEM 178BHSKX -->
+        <iframe src=""https://calendar.google.com/calendar/embed?src=7f3bf194c07b685e0ccb4a2c1cf55ac6ae79284ffdfb9e8930ff0d15d0f5407e%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>" style="border: 0" width="100%" height="500" frameborder="0" scrolling="no"></iframe>
+      </div>
+
+      <div class="info-box">
+        <h3>Request to Book</h3>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="e23ad454-f06d-4838-b6ea-7002d8b08143">
+          <input type="hidden" name="camper_model" value="2022 Salem 178BHSKX">
+
+          <div class="form-group"><label>Name:</label><input type="text" name="name" required></div>
+          <div class="form-group"><label>Email:</label><input type="email" name="email" required></div>
+          <div class="form-group"><label>Phone:</label><input type="tel" name="phone" required></div>
+          <div class="form-group"><label>Pickup / Start Date:</label><input type="date" name="start_date" required></div>
+          <div class="form-group"><label>Return / End Date:</label><input type="date" name="end_date" required></div>
+          <div class="form-group">
+            <label>Delivery Option:</label>
+            <select name="delivery_type">
+              <option value="Self Pickup">Self Pickup ($25 Equalizer Hitch fee applies)</option>
+              <option value="Delivery">Delivery ($4/mi, $100 min + $75 sewage fee)</option>
+              <option value="Winstock">Winstock Special Flat Rate ($300)</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Add-ons requested:</label><textarea name="addons" placeholder="E.g. Generator, E-bikes, Brake controller"></textarea></div>
+          <button type="submit" class="btn">Send Rental Inquiry</button>
+        </form>
+      </div>
+    </div> <!-- End of .detail-grid -->
+
+    <!-- Amenities & Rules Placed FULL WIDTH Below the Grid -->
+    <section class="camper-details-extra">
+      <div class="amenities-container">
+        <h3>What’s Included with Your Rental</h3>
+        <ul class="amenities-list">
+          <li>🛏️ Bedding, pillows, & blankets</li>
+          <li>🧼 Towels for 4 people</li>
+          <li>🍳 Cookware & utensils</li>
+          <li>🧹 Cleaning supplies</li>
+          <li>⚙️ Exterior set-up equipment</li>
+          <li>🪑 2 Bag chairs</li>
+          <li>🧻 RV toilet paper & tank chemicals</li>
+        </ul>
+      </div>
+
+      <div class="rules-container">
+        <h3>Rental Rules</h3>
+        <ul class="rules-list">
+          <li><strong>Age Limit:</strong> Renters must be 25 years or older.</li>
+          <li><strong>🚭 NO SMOKING:</strong> Absolutely NO smoking in trailers! Damage deposit will be automatically revoked.</li>
+          <li><strong>🐾 Pet Policy:</strong> Pet friendly! (Renters must clean all evidence of pets prior to return).</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Cancellation Policy Card -->
+    <section class="cancellation-policy">
+      <div class="policy-card">
+        <h3>🗓️ Cancellation Policy</h3>
+        <ul class="rules-list">
+          <li><strong>14+ Days Notice:</strong> Full refund of booking total.</li>
+          <li><strong>7–13 Days Notice:</strong> 50% refund of booking total.</li>
+          <li><strong>Under 7 Days Notice:</strong> Non-refundable.</li>
+        </ul>
+      </div>
+    </section>
+
+  </div> <!-- End of .container -->
+
+  <footer><p>&copy; Meyer Outdoors & Rentals</p></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
